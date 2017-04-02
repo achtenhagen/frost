@@ -27,7 +27,10 @@
 	width: 22px
 }
 
-.toggle-switch.on { background: #3498db }
+.toggle-switch.on {
+	background: #3498db;
+	transition: background .15s ease-in-out
+}
 
 .toggle-switch.on .state {
 	color: #fff;
@@ -39,3 +42,6 @@
 	background: #2980b9;
 	left: 34px
 }
+
+.toggle-switch .switch,
+.toggle-switch.on .switch { transition: left .15s ease-in-out }
