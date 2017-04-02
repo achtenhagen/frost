@@ -20,6 +20,9 @@ select {
 	position: relative
 }
 
+.selector,
+.selector:hover { transition: all .3s ease-in-out }
+
 .selector:hover {
 	background: #3498db;
 	color: #fff
