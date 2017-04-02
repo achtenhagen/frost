@@ -1,0 +1,127 @@
+.panel {
+	background: #fff;
+	border-bottom: 1px solid #eaeaea;
+	border-top: 1px solid #eaeaea;
+	position: relative;
+	width: 100%
+}
+
+.panel-header {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased
+}
+.panel-header {
+	color: #95a5a6;
+	cursor: default;
+	margin: 30px 0 15px 15px;
+	text-transform: uppercase
+}
+
+.panel .row { -webkit-font-smoothing: subpixel-antialiased }
+.panel .row {
+	border-bottom: 1px solid #f6f6f6;
+	height: 46px;
+	margin-left: 20px;
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap
+}
+
+.panel .row:last-of-type { border: 0 }
+
+.panel .suggestions {
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+	display: none;
+	max-height: 222px;
+	opacity: 0;
+	padding: 6px;
+	width: 100%;
+	z-index: 1
+}
+
+.panel .suggestions li {
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 14px;
+	width: 100%
+}
+
+.panel .suggestions li:hover {
+	background: #3498db;
+	color: #fff
+}
+
+.panel .row .wrapper {
+	background: #fff;
+	height: 100%;
+	left: 0;
+	position: relative;
+	z-index: 1
+}
+
+.panel .row .label {
+	cursor: default;
+	display: inline-block;
+	float: left;
+	margin: 16px 20px 0 0;
+	z-index: 1
+}
+
+.panel .row .label span { -webkit-font-smoothing: antialiased }
+.panel .row .label span {
+	color: #95a5a6;
+	font-size: 12px;
+	padding-left: 4px
+}
+
+.panel .row a {
+	position: relative;
+	top: 16px
+}
+
+.panel .row .detail {
+	background: url('../images/row_detail.png') no-repeat center center;
+	cursor: pointer;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50px
+}
+
+.panel .row .delete {
+	background: url('../images/row_delete.png') no-repeat center center;
+	cursor: pointer;
+	opacity: .2;
+	padding: 22px 25px;
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+.panel .row:hover .delete { opacity: 1.0 }
+
+.panel .row .confirm {
+	background: #2ecc71 url('../images/menu_confirm.png') no-repeat center center;
+	cursor: pointer;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	visibility: hidden; /* iOS Mobile fix */
+	width: 50px
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(min-device-pixel-ratio: 1.5),
+(min-resolution: 1.5dppx) {
+	.panel .row .delete {
+		background: url('../images/row_delete@2x.png') no-repeat center center;
+		background-size: 20px
+	}
+	.panel .row .confirm {
+		background: #2ecc71 url('../images/menu_confirm@2x.png') no-repeat center center;
+		background-size: 20px
+	}
+}
