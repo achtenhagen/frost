@@ -1,0 +1,55 @@
+button::-moz-focus-inner {
+	border: 0;
+	margin: 0;
+	padding: 0
+}
+
+button { -webkit-font-smoothing: subpixel-antialiased }
+button {
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 15px;
+	padding: 14px 0;
+	text-align: center
+}
+
+button.blue      { background: #3498db }
+button.lightblue { background: #75d3f0 }
+button.graphite  { background: #505050 }
+button.green     { background: #01cccc }
+button.red       { background: #e74c3c }
+
+/* Active State */
+
+button.blue:active,
+button.lightblue:active,
+button.green:active,
+button.red:active { color: #e4e8e9 }
+
+button.blue:active      { background: #2873a6 !important }
+button.lightblue:active { background: #43798a !important }
+button.graphite:active  { background: #3e3e3e !important }
+button.green:active     { background: #00bdbd !important }
+button.red:active       { background: #c0392b !important }
+
+ /* Hover State */
+
+button.blue:hover      { background: #3aa9f4 }
+button.lightblue:hover { background: #75d3f0 }
+button.graphite:hover  { background: #5a5a5a }
+button.green:hover     { background: #01d4d4 }
+button.red:hover       { background: #ff5442 }
+
+/* Glow Animation */
+
+button.blue.glow, button.lightblue.glow,
+button.green.glow, button.red.glow {
+	animation-duration: 2s;
+	animation-iteration-count: infinite
+}
+
+button.blue.glow      { animation-name: glow-blue }
+button.lightblue.glow { animation-name: glow-lightblue }
+button.green.glow     { animation-name: glow-green }
+button.red.glow       { animation-name: glow-red }

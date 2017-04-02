@@ -1,0 +1,38 @@
+input,textarea {
+	   -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+input,textarea {
+    appearance: none;
+    background: none;
+    border-radius: 0;
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+	font-size: 14px;
+    outline: none
+}
+
+input:invalid { box-shadow: none }
+
+::placeholder { -webkit-font-smoothing: antialiased }
+::placeholder {
+	color: #95a5a6;
+	font-size: 14px;
+}
+
+::-webkit-input-placeholder {
+	color: #95a5a6;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+}
+
+::-moz-placeholder {
+	color: #95a5a6;
+	font-size: 14px;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+:-ms-input-placeholder {
+	color: #95a5a6;
+	font-size: 14px;
+}

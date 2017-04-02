@@ -1,0 +1,41 @@
+.toggle-switch {
+	background: #f4f4f4;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+	height: 26px;
+	margin: 10px;
+	position: relative;
+	width: 60px
+}
+
+.toggle-switch .state {
+	color: #95a5a6;
+	float: right;
+	font-size: 12px;
+	margin: 7px 8px 0 0;
+	text-transform: uppercase
+}
+
+.toggle-switch .switch {
+	background: #3498db;
+	border-radius: 2px;
+	height: 18px;
+	left: 4px;
+	position: absolute;
+	top: 4px;
+	width: 22px
+}
+
+.toggle-switch.on { background: #3498db }
+
+.toggle-switch.on .state {
+	color: #fff;
+	float: left;
+	margin: 7px 0 0 10px
+}
+
+.toggle-switch.on .switch {
+	background: #2980b9;
+	left: 34px
+}

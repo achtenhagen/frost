@@ -1,0 +1,42 @@
+.checkbox-wrapper {
+	display: inline-block;
+	position: relative
+}
+
+.checkbox-wrapper label {
+	background: #3498db;
+	border-radius: 4px;
+	cursor: pointer;
+	height: 18px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 18px
+}
+
+.checkbox-wrapper label:after {
+	background: transparent;
+	border: 3px solid #fff;
+	border-top: none;
+	border-right: none;
+	content: '';
+	height: 3px;
+	left: 4px;
+	opacity: 0;
+	position: absolute;
+	top: 5px;
+	transform: rotate(-45deg);
+	width: 8px
+}
+
+.checkbox-wrapper label:hover::after { opacity: 0.2 }
+
+.checkbox-wrapper input[type=checkbox]:checked + label:after { opacity: 1 }
+
+.checkbox-wrapper input[type=checkbox] { opacity: 0 }
+
+.checkbox-wrapper div  {
+	cursor: default;
+	display: inline-block;
+	margin: 2px 0 0 15px
+}
