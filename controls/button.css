@@ -56,7 +56,7 @@ button.green.glow, button.red.glow {
 	animation-iteration-count: infinite
 }
 
-button.blue.glow      { animation-name: glow-blue }
+button.blue.glow      { animation-name: glow-blue      }
 button.lightblue.glow { animation-name: glow-lightblue }
-button.green.glow     { animation-name: glow-green }
-button.red.glow       { animation-name: glow-red }
+button.green.glow     { animation-name: glow-green     }
+button.red.glow       { animation-name: glow-red       }
